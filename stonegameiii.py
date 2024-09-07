@@ -1,13 +1,12 @@
 class Solution:
     def maxValue(self, a, b, c):
-        # Inicializa a lista com os valores diretamente
         valores = [0, 0, 0]
         valores[0] = a
         valores[1] = a + b
         valores[2] = a + b + c
         
         pontos = max(valores)
-        posicao = valores.index(pontos)  # .index() retorna a posição do valor máximo
+        posicao = valores.index(pontos) 
         
         return [pontos, posicao]
             

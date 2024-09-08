@@ -24,8 +24,8 @@ A partir do juiz Online [LeetCode](https://leetcode.com/) selecionei 2 exercíci
 ### [Exercício 3 (Difícil)]()
 ![submission]()
 
-### [Exercício 4 (Difícil)]()
-![submission]()
+### [Exercício 4 (Difícil) Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/)
+![submission](Longest%20Valid%20Parentheses/imagens/submission.png)
 ## Instalação 
 **Linguagem**: Python3<br>
 Você precisará apenas criar uma conta no [LeetCode](https://leetcode.com/).

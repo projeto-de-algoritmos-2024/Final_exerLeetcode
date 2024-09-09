@@ -32,4 +32,4 @@ A partir do juiz Online [LeetCode](https://leetcode.com/) selecionamos 3 exercí
 Você precisará apenas criar uma conta no [LeetCode](https://leetcode.com/).
 
 ## Apresentação
-[Vídeo de apresentação]()
+[Vídeo de apresentação](https://www.youtube.com/watch?v=USCjDg7h1tc)

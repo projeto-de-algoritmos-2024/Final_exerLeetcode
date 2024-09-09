@@ -21,8 +21,8 @@ A partir do juiz Online [LeetCode](https://leetcode.com/) selecionei 2 exercíci
 ### [Exercício 2 (Difícil)]()
 ![submission]()
 
-### [Exercício 3 (Difícil)]()
-![submission]()
+### [Exercício 3 (Difícil) Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/)
+![submission](Regular%20Expression%20Matching/imagens/submission.png)
 
 ### [Exercício 4 (Difícil) Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/)
 ![submission](Longest%20Valid%20Parentheses/imagens/submission.png)

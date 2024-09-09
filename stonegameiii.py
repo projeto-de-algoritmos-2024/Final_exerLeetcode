@@ -1,44 +1,27 @@
 class Solution:
-    def maxValue(self, a, b = 0, c = 0):
-        valores = [0, 0, 0]
-        valores[0] = a
-        valores[1] = a + b
-        valores[2] = a + b + c
+    def stoneGm(self, vetor: list[int], i, memo):
+        if i >= len(vetor):
+            return 0
         
-        pontos = max(valores)
-        posicao = valores.index(pontos) 
+        if i in memo:
+            return memo[i]
         
-        return [pontos, posicao]
+        pegarUmaPedra = vetor[i] - self.stoneGm(vetor, i+1, memo)
+        pegarDuas = float('-inf')
+        pegarTres = float('-inf')
+        
+        if i + 1 < len(vetor):
+            pegarDuas = vetor[i] + vetor[i + 1] - self.stoneGm(vetor, i+2, memo)
+        
+        if i + 2 < len(vetor):
+            pegarTres = vetor[i] + vetor[i + 1] + vetor[i + 2] - self.stoneGm(vetor, i+3, memo)
+        
+        memo[i] = max(pegarUmaPedra, pegarDuas, pegarTres)
+        return memo[i]
             
     def stoneGameIII(self, stoneValue: List[int]) -> str:
-        total = 0
-        
-        i = 0
-        while i < len(stoneValue):
-            if i <= len(stoneValue) - 3:
-                pontosPosicao = self.maxValue(stoneValue[i], stoneValue[i+1], stoneValue[i+2])
-            elif i == len(stoneValue) - 2:
-                pontosPosicao = self.maxValue(stoneValue[i], stoneValue[i+1])
-            else:
-                pontosPosicao = self.maxValue(stoneValue[i])
-            
-            total += pontosPosicao[0]
-            i += pontosPosicao[1] + 1
-            
-            if i >= len(stoneValue):
-                break
-            
-            if i <= len(stoneValue) - 3:
-                pontosPosicao = self.maxValue(stoneValue[i], stoneValue[i+1], stoneValue[i+2])
-            elif i == len(stoneValue) - 2:
-                pontosPosicao = self.maxValue(stoneValue[i], stoneValue[i+1])
-            else:
-                pontosPosicao = self.maxValue(stoneValue[i])
-            
-            total -= pontosPosicao[0]
-            i += pontosPosicao[1] + 1
-        
-        print (total)
+        memo = {}
+        total = self.stoneGm(stoneValue, 0, memo)
         
         if total > 0:
             return "Alice"
@@ -46,4 +29,3 @@ class Solution:
             return "Tie"
         else:
             return "Bob"
-

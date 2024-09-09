@@ -20,7 +20,7 @@ A partir do juiz Online [LeetCode](https://leetcode.com/) selecionamos 3 exercí
 
 
 ### [Exercício 2 (Difícil) Stone Game III](https://leetcode.com/problems/stone-game-iii/description/)
-(![submission](https://github.com/user-attachments/assets/b386dd50-c49a-41b1-8331-ae6eae3ac12b)
+![submission](https://github.com/user-attachments/assets/b386dd50-c49a-41b1-8331-ae6eae3ac12b)
 
 ### [Exercício 3 (Difícil) Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/)
 ![submission](Regular%20Expression%20Matching/imagens/submission.png)
